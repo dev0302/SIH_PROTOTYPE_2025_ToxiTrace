@@ -68,10 +68,6 @@ function Navbar() {
                         </div>
                       </NavLink>
                       
-                      {/* Floating animation circles - positioned to not affect height */}
-                      <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce opacity-60 pointer-events-none"></div>
-                      <div className="absolute -bottom-0.5 -left-0.5 w-1 h-1 bg-blue-400 rounded-full animate-pulse opacity-80 pointer-events-none"></div>
-                      
                       {/* Glow effect - positioned to not affect height */}
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-md blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 pointer-events-none"></div>
                     </div>
@@ -185,10 +181,6 @@ function Navbar() {
                       </div>
                     </div>
                   </NavLink>
-                  
-                  {/* Floating animation circles - positioned to not affect height */}
-                  <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-bounce opacity-60 pointer-events-none"></div>
-                  <div className="absolute -bottom-0.5 -left-0.5 w-1 h-1 bg-blue-400 rounded-full animate-pulse opacity-80 pointer-events-none"></div>
                   
                   {/* Glow effect - positioned to not affect height */}
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-md blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 pointer-events-none"></div>
