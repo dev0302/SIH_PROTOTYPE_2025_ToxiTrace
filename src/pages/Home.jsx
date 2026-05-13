@@ -49,91 +49,29 @@ function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                {/* Animated User Button */}
-                <div className="relative group">
-                  {/* Continuous pulsing ring */}
-                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg animate-pulse opacity-30"></div>
-                  
-                <button 
+                <button
                   onClick={handleGetStarted}
-                    className="relative px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
-                  >
-                    {/* Animated background circle */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    {/* Pulsing ring animation */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg opacity-75 group-hover:opacity-100 animate-ping"></div>
-                    
-                    {/* Content */}
-                    <div className="relative flex items-center justify-center">
-                      <span className="mr-2">Get Started as User</span>
-                      {/* Animated arrow */}
-                      <div className="relative">
-                        <svg 
-                          className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M13 7l5 5m0 0l-5 5m5-5H6" 
-                          />
-                        </svg>
-                        {/* Arrow trail effect */}
-                        <div className="absolute inset-0 bg-white/30 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
-                      </div>
-                    </div>
+                  className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <span className="inline-flex items-center">
+                    <span className="mr-2">Get Started as User</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
                 </button>
-                  
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-                </div>
-                
-                {/* Animated Researcher Button */}
-                <div className="relative group">
-                  {/* Continuous pulsing ring */}
-                  <div className="absolute -inset-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg animate-pulse opacity-30"></div>
-                  
-                <button 
+
+                <button
                   onClick={handleResearcherClick}
-                    className="relative px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
-                  >
-                    {/* Animated background circle */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    {/* Pulsing ring animation */}
-                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg opacity-75 group-hover:opacity-100 animate-ping"></div>
-                    
-                    {/* Content */}
-                    <div className="relative flex items-center justify-center">
-                      <span className="mr-2">Get Started as Researcher</span>
-                      {/* Animated arrow */}
-                      <div className="relative">
-                        <svg 
-                          className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M13 7l5 5m0 0l-5 5m5-5H6" 
-                          />
-                        </svg>
-                        {/* Arrow trail effect */}
-                        <div className="absolute inset-0 bg-white/30 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
-                      </div>
-                    </div>
+                  className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <span className="inline-flex items-center">
+                    <span className="mr-2">Get Started as Researcher</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
                 </button>
-                  
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-                </div>
               </div>
             </div>
             
