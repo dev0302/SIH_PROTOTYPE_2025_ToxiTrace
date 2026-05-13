@@ -207,11 +207,6 @@ S005,LAB001,Central Water Research Lab,NABL-12345,Dr. Dev Malik,2024-01-16,10:45
                     </div>
                   </button>
                   
-                  {/* "Click Me" indicator */}
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90">
-                    Click Me!
-                  </div>
-                  
                   {/* Floating animation circles */}
                   <div className="absolute -top-1 -right-1 w-2 h-2 bg-green-400 rounded-full animate-bounce opacity-60"></div>
                   <div className="absolute -bottom-0.5 -left-0.5 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse opacity-80"></div>
@@ -279,13 +274,6 @@ S005,LAB001,Central Water Research Lab,NABL-12345,Dr. Dev Malik,2024-01-16,10:45
                       </div>
                     </div>
                   </button>
-                  
-                  {/* "Click Me" indicator - only show when file is uploaded */}
-                  {isFileUploaded && (
-                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90">
-                      Click Me!
-                    </div>
-                  )}
                   
                   {/* Floating animation circles - only show when file is uploaded */}
                   {isFileUploaded && (

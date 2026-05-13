@@ -92,11 +92,6 @@ function Home() {
                   <div className="absolute -top-2 -right-2 w-3 h-3 bg-blue-400 rounded-full animate-bounce opacity-60"></div>
                   <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-cyan-400 rounded-full animate-pulse opacity-80"></div>
                   
-                  {/* "Click Me" indicator */}
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90">
-                    Click Me!
-                  </div>
-                  
                   {/* Glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
                 </div>
@@ -143,11 +138,6 @@ function Home() {
                   {/* Floating animation circles */}
                   <div className="absolute -top-2 -right-2 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
                   <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-pink-400 rounded-full animate-pulse opacity-80"></div>
-                  
-                  {/* "Click Me" indicator */}
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90">
-                    Click Me!
-                  </div>
                   
                   {/* Glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
@@ -530,11 +520,6 @@ function Home() {
                 {/* Floating animation circles */}
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-blue-400 rounded-full animate-bounce opacity-60"></div>
                 <div className="absolute -bottom-0.5 -left-0.5 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse opacity-80"></div>
-                
-                {/* "Click Me" indicator */}
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90">
-                  Click Me!
-                </div>
                 
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>

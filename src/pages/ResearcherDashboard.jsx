@@ -356,11 +356,6 @@ export default function ResearcherDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {/* Upload New File Card */}
           <div className="bg-gray-900 p-8 rounded-2xl shadow-lg border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 group relative">
-            {/* Click Me indicator */}
-            <div className="absolute -top-3 -right-3 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90 z-10">
-              Click Me!
-            </div>
-            
             {/* Floating animation circles */}
             <div className="absolute -top-2 -right-2 w-3 h-3 bg-cyan-400 rounded-full animate-bounce opacity-60"></div>
             <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-80"></div>
@@ -390,11 +385,6 @@ export default function ResearcherDashboard() {
 
           {/* View Previous Files Card */}
           <div className="bg-gray-900 p-8 rounded-2xl shadow-lg border border-gray-700 hover:border-purple-500/50 transition-all duration-300 group relative">
-            {/* Click Me indicator */}
-            <div className="absolute -top-3 -right-3 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full animate-bounce opacity-90 z-10">
-              Click Me!
-            </div>
-            
             {/* Floating animation circles */}
             <div className="absolute -top-2 -right-2 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-60"></div>
             <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-pink-400 rounded-full animate-pulse opacity-80"></div>
