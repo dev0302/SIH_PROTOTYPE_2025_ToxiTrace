@@ -23,58 +23,6 @@ function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               {["/", "/our-vision", "/heatmap", "/reports"].map((path, idx) => {
                 const names = ["Home", "Our Vision", "HMPI Heat Map", "Reports"];
-                
-                // Special animated styling for HMPI Heat Map (index 2)
-                if (idx === 2) {
-                  return (
-                    <div key={idx} className="relative group inline-block">
-                      {/* Continuous pulsing ring - positioned to not affect height */}
-                      <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md animate-pulse opacity-20 pointer-events-none"></div>
-                      
-                      <NavLink
-                        to={path}
-                        className={({ isActive }) =>
-                          `relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 overflow-hidden inline-block ${
-                            isActive
-                              ? "text-blue-400 bg-blue-400/10"
-                              : "text-gray-300 hover:text-cyan-400 hover:bg-blue-400/5"
-                          }`
-                        }
-                      >
-                        {/* Animated background */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        
-                        {/* Content */}
-                        <div className="relative flex items-center">
-                          <span className="mr-1">{names[idx]}</span>
-                          {/* Animated heat map icon */}
-                          <div className="relative">
-                            <svg 
-                              className="w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" 
-                              fill="none" 
-                              stroke="currentColor" 
-                              viewBox="0 0 24 24"
-                            >
-                              <path 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                strokeWidth={2} 
-                                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" 
-                              />
-                            </svg>
-                            {/* Icon trail effect */}
-                            <div className="absolute inset-0 bg-cyan-400/30 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
-                          </div>
-                        </div>
-                      </NavLink>
-                      
-                      {/* Glow effect - positioned to not affect height */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-md blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 pointer-events-none"></div>
-                    </div>
-                  );
-                }
-                
-                // Regular styling for other nav items
                 return (
                   <NavLink
                     key={idx}
@@ -137,58 +85,6 @@ function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#1E293B]">
           {["/", "/our-vision", "/heatmap", "/reports"].map((path, idx) => {
             const names = ["Home", "Our Vision", "HMPI Heat Map", "Reports"];
-            
-            // Special animated styling for HMPI Heat Map (index 2) in mobile
-            if (idx === 2) {
-              return (
-                <div key={idx} className="relative group">
-                  {/* Continuous pulsing ring - positioned to not affect height */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md animate-pulse opacity-20 pointer-events-none"></div>
-                  
-                  <NavLink
-                    to={path}
-                    className={({ isActive }) =>
-                      `relative block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 overflow-hidden ${
-                        isActive
-                          ? "text-blue-400 bg-blue-400/10"
-                          : "text-gray-300 hover:text-cyan-400 hover:bg-blue-400/5"
-                      }`
-                    }
-                  >
-                    {/* Animated background */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-blue-600/20 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    {/* Content */}
-                    <div className="relative flex items-center">
-                      <span className="mr-1">{names[idx]}</span>
-                      {/* Animated heat map icon */}
-                      <div className="relative">
-                        <svg 
-                          className="w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" 
-                          />
-                        </svg>
-                        {/* Icon trail effect */}
-                        <div className="absolute inset-0 bg-cyan-400/30 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 ease-out"></div>
-                      </div>
-                    </div>
-                  </NavLink>
-                  
-                  {/* Glow effect - positioned to not affect height */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-md blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 pointer-events-none"></div>
-                </div>
-              );
-            }
-            
-            // Regular styling for other nav items in mobile
             return (
               <NavLink
                 key={idx}
